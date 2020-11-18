@@ -26,19 +26,26 @@
             <div class="banner-title">
                 <h1>Gustavo Venceslau</h1>
                 <h3>Desenvolvedor Front End - Analista de SEO</h3>
+                <span class="ScrollDown"><a href="#scrollProject" class="ScrollDown"><img src="img/next.svg" alt=""></a></span>
             </div>
-            <span class="ScrollDown"><a href="#scrollProject" class="ScrollDown"><img src="img/next.svg" alt=""></a></span>
         </section>
-        <section class="projects" id="scrollProject">
-            <div class="box-projects">
+
+        <section class="projects">
+            <div class="box-projects" id="scrollProject">
                 <div class="projects-items">
+                    <div class="Imagebox project-one">
+                        <div class="textBox">
+                            <h2>Desenvolvimento de Sites - Neto de Aluguel</h2>
+                        </div>
+                    </div>
                 </div>
                 <div class="projects-items">
                 </div>
             </div>
         </section>
     </main>
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
     <script>
         $("a[href^='#']").click(function (e) {
             e.preventDefault();
@@ -47,7 +54,7 @@
 
             $("body, html").animate({
                 scrollTop: position
-            } ,1200);
+            }, 1200);
         });
 
     </script>
