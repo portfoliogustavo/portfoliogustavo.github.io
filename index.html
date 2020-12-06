@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio - Gustavo Venceslau</title>
+    
 </head>
 
 <body>
@@ -68,21 +69,8 @@
 
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
-
-    <!-- Script Scroll -->
-    <script>
-
-        $("a[href^='#']").click(function (e) {
-            e.preventDefault();
-
-            var position = $($(this).attr("href")).offset().top;
-
-            $("body, html").animate({
-                scrollTop: position
-            }, 1200);
-        });
-
-    </script>
+    <script src="js/scripts.js"></script>
+ 
 </body>
 
 </html>
