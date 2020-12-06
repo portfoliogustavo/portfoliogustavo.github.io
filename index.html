@@ -5,24 +5,28 @@
     <meta charset="UTFF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio Desenvolvedor Front End, Desenvolvedor Web, Gustavo Venceslau">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio - Gustavo Venceslau</title>
 </head>
 
 <body>
     <div class="container-nav">
-        <ul>
-            <li>Projetos</li>
-            <li>Sobre</li>
-            <li>Contato</li>
-        </ul>
-        <img src="img/logo.png" alt="logo-GustavoVenceslau">
-        <div class="container-redes-sociais">
-            <a href="https://www.linkedin.com/in/gustavo-venceslau-a40912181/" target="blank"><img src="img/logoLinkedIn.png" alt=""></a>
-        </div>
+       <a href="#"><img src="img/logo.png" alt="logo-GustavoVenceslau" class="logo"></a> 
     </div>
+    
     <main>
+        <div class="menu-nav">
+            <ul>
+                <li>Projetos</li>
+                <li>Sobre</li>
+                <li>Contato</li>
+            </ul>
+        </div>
+        
         <section class="home-section">
+            
             <div class="banner-title">
                 <h1>Gustavo Venceslau</h1>
                 <h3>Desenvolvedor Front End - Analista de SEO</h3>
@@ -32,21 +36,42 @@
 
         <section class="projects">
             <div class="box-projects" id="scrollProject">
-                <div class="projects-items">
-                    <div class="Imagebox project-one">
-                        <div class="textBox">
-                            <h2>Desenvolvimento de Sites - Neto de Aluguel</h2>
-                        </div>
-                    </div>
-                </div>
-                <div class="projects-items">
-                </div>
+                <div class="grid">
+					<figure class="effect-zoe">
+						<img src="https://tympanus.net/Development/HoverEffectIdeas/img/25.jpg" alt="img25"/>
+						<figcaption>
+							<h2>Creative <span>Zoe</span></h2>
+							<p class="icon-links">
+								<a href="#"><span class="icon-heart"></span></a>
+								<a href="#"><span class="icon-eye"></span></a>
+								<a href="#"><span class="icon-paper-clip"></span></a>
+							</p>
+							<p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-zoe">
+						<img src="https://tympanus.net/Development/HoverEffectIdeas/img/26.jpg" alt="img26"/>
+						<figcaption>
+							<h2>Creative <span>Zoe</span></h2>
+							<p class="icon-links">
+								<a href="#"><span class="icon-heart"></span></a>
+								<a href="#"><span class="icon-eye"></span></a>
+								<a href="#"><span class="icon-paper-clip"></span></a>
+							</p>
+							<p class="description">Zoe never had the patience of her sisters. She deliberately punched the bear in his face.</p>
+						</figcaption>			
+					</figure>
+				</div>
             </div>
         </section>
     </main>
+
     <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
         crossorigin="anonymous"></script>
+
+    <!-- Script Scroll -->
     <script>
+
         $("a[href^='#']").click(function (e) {
             e.preventDefault();
 
@@ -58,7 +83,11 @@
         });
 
     </script>
-
 </body>
 
 </html>
+
+
+<!-- <div class="container-redes-sociais">
+    <a href="https://www.linkedin.com/in/gustavo-venceslau-a40912181/" target="blank"><img src="img/logoLinkedIn.png" alt=""></a>
+</div> -->
