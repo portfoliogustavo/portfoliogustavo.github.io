@@ -2,56 +2,105 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTFF-8">
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Portfólio Desenvolvedor Front End, Desenvolvedor Web, Gustavo Venceslau">
+    <link rel="shortcut icon" href="img/faviicon.png" type="image/x-icon">
+    <link rel="icon" href="img/faviicon.png" type="image/x-icon">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;500;700&family=Poppins:wght@200;300;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Portfolio - Gustavo Venceslau</title>
-    
 </head>
 
 <body>
-    <nav class="container-nav">
-       <a href="#"><img src="img/logo.png" alt="logo-GustavoVenceslau" class="logo"></a> 
-    </nav>
+    <header class="cabecalho container">
+        <div class="cabecalho__logotipo">
+            <a class="cabecalho__logotipo--logo" href=""><img src="img/logotipo-header.png"
+                    title="Gustavo Venceslau - Dev Front End" alt="Logo do Portfolio Gustavo Venceslau"></a>
+        </div>
+        <nav class="barra__navegacao">
+            <ul class="barra__navegacao--list">
+                <li class="barra__navegacao--list__item"><a href="#projetos" title="Projetos"><i class="fas fa-cogs fa-2x menu--icon"></i></i><span clas="menu__item">Projetos</span> </a></li>
+                <li class="barra__navegacao--list__item"><a href="" title="Sobre"><i class="fas fa-user-circle fa-2x menu--icon"></i> <span clas="menu__item">Sobre</span> </a></li>
+                <li class="barra__navegacao--list__item"><a href="" title="Skills"><i class="fas fa-code fa-2x menu--icon"></i><span clas="menu__item">Skills</span> </a></li>
+                <li class="barra__navegacao--list__item"><a href="" title="Contato"><i class="fas fa-phone fa-2x menu--icon"></i><span clas="menu__item">Contato</span> </a></li>
+
+            </ul>
+        </nav>
+    </header>
     <main>
-        <section class="home-section">
-            <div class="banner-title">
-                <h1>Gustavo Venceslau</h1>
-                <h3>Desenvolvedor Front End - Analista de SEO</h3>
-                <span class="ScrollDown"><a href="#scrollProject" class="ScrollDown"><img src="img/next.svg" alt=""></a></span>
+        <section class="banner__home container">
+            <div class="box__text">
+                <h1 class="box__text--titulo">Gustavo Venceslau</h1>
+                <p class="box__text--descricao">Dev Front End e Analista de SEO, com pouco mais de 1 ano de experiência.
+                    Da uma olhada ai!
+                    Seja bem vindo(a) ao meu Portfolio.</p>
+            </div>
+        </section>
+        <hr class="linha__divider" id="projetos">
+
+        <section class="projetos container">
+            <h2 class="projetos__titulo">Projetos</h2>
+            <div class="box__projetos">
+                <!-- ITEM CARD -->
+                <div class="card__project">
+                    <img src="img/project-1.png" alt="" class="card__project--imagem">
+                    <div class="card__text">
+                        <h2 class="card__text--titulo">Neto de Aluguel</h2>
+                        <div class="box__tecnologias--usadas">
+                            <img src="img/projetos.svg" alt="" class="icon--view">''
+                            <img src="img/projetos.svg" alt="" class="icon--view">
+                            <img src="img/projetos.svg" alt="" class="icon--view">
+                            <img src="img/projetos.svg" alt="" class="icon--view">
+                        </div>
+                        <a href="" class="btn btn__view--project">Ver o site</a>
+                        <a href="" class="btn btn__view--project">Ver o repositório</a>
+                    </div>
+                </div>
+                <!-- END ITEM CARD -->
+                <!-- ITEM CARD -->
+                <div class="card__project">
+                    <img src="img/project-1.png" alt="" class="card__project--imagem">
+                    <div class="card__text">
+                        <h2 class="card__text--titulo">Good Connection</h2>
+                        <div class="box__tecnologias--usadas">
+                            <img src="img/projetos.svg" alt="" class="icon--view">
+                            <img src="img/projetos.svg" alt="" class="icon--view">
+                            <img src="img/projetos.svg" alt="" class="icon--view">
+                            <img src="img/projetos.svg" alt="" class="icon--view">
+                        </div>
+                        <a href="" class="btn btn__view--project">Ver o site</a>
+                        <a href="" class="btn btn__view--project">Ver o repositório</a>
+                    </div>
+                </div>
+                <!-- END ITEM CARD -->
+                <!-- ITEM CARD -->
+                <div class="card__project">
+                    <img src="img/project-1.png" alt="" class="card__project--imagem">
+                    <div class="card__text">
+                        <h2 class="card__text--titulo">Neto de Aluguel</h2>
+                        <div class="box__tecnologias--usadas">
+                            <img src="img/projetos.svg" alt="" class="icon--view">
+                            <img src="img/projetos.svg" alt="" class="icon--view">
+                            <img src="img/projetos.svg" alt="" class="icon--view">
+                            <img src="img/projetos.svg" alt="" class="icon--view">
+                        </div>
+                        <a href="" class="btn btn__view--project">Ver o site</a>
+                        <a href="" class="btn btn__view--project">Ver o repositório</a>
+                    </div>
+                </div>
+                <!-- END ITEM CARD -->
+                
+
             </div>
         </section>
 
-        <section class="projects">
-            <div class="box-projects" id="scrollProject">
-                <div class="projects-container">
-					<figure class="project-item">
-						<img class='img-project' src="https://tympanus.net/Development/HoverEffectIdeas/img/25.jpg" alt="img25"/>
-						<figcaption>
-							<h2>Nome do Site</h2>
-							<button class=view-project>Ver site</button>
-						</figcaption>			
-                    </figure>
-                    <figure class="project-item">
-						<img class='img-project' src="https://tympanus.net/Development/HoverEffectIdeas/img/25.jpg" alt="img25"/>
-						<figcaption>
-							<h2>Nome do Site</h2>
-							<button class=view-project>Ver site</button>
-							
-						</figcaption>			
-					</figure>
-				</div>
-            </div>
-        </section>
     </main>
-
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-        crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
- 
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
 </body>
 
 </html>
@@ -60,3 +109,4 @@
 <!-- <div class="container-redes-sociais">
     <a href="https://www.linkedin.com/in/gustavo-venceslau-a40912181/" target="blank"><img src="img/logoLinkedIn.png" alt=""></a>
 </div> -->
+<!-- <lottie-player src="https://assets7.lottiefiles.com/packages/lf20_RWmLEO.json"  background="transparent"  speed="1"  style="width: 300px; height: 300px;"  loop autoplay></lottie-player> -->
