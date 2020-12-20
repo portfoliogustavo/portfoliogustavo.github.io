@@ -28,11 +28,13 @@ body{
     padding-left: 6%;
 }
 .cabecalho{
-    padding: 5px;
+    padding: 2px;
     background-color:  var(--cinza-escuro-cabecalho);
     position: sticky;
     top: 0;
     font-weight: 300;
+    display:flex;
+    justify-content: space-around;
     z-index: 10;
     box-shadow: 1px 1px 10px var(--box-shadow);
     animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
@@ -47,7 +49,6 @@ body{
 }
 
 .barra__navegacao {
-    width: 100%;
     display: flex;
     justify-content: center;
 }
@@ -154,6 +155,8 @@ body{
   }
   
 .linha__divider{
+  margin-top:50px;
+  margin-bottom:50px;
     width: 200px;
     height: 3px;
     background-color: var(--branco);
@@ -179,6 +182,7 @@ body{
     padding: 50px;
     display: flex;
     justify-content: space-evenly;
+    align-items: flex-start;
     flex-wrap: wrap;
     border-radius: 10px;
     background-color: var(--preto-transparente);
@@ -291,6 +295,58 @@ body{
     flex-direction: column;
     align-items: center;
   }
+
+  .box__sobre{
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    align-items: center;
+    background-color: var(--cinza-claro);
+  }
+  .sobre__titulo{
+    background-color: var(--azul);
+    margin: 0 auto;
+    padding: 10px;
+    position: relative;
+    top: 25px;
+    z-index: 9;
+    font-weight: 300;
+    border-radius: 10px;
+    max-width: 300px;
+    font-size: 2rem;
+    text-align: center;
+    color: var(--cinza-claro);
+}
+  .box__sobre--text{
+    max-width: 50%;
+  }
+  .box__sobre--text h2{
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin:20px;
+    margin-left:0;
+    color: var(--cinza-claro);
+    padding:5px;
+    background-color: var(--azul);
+    border-radius:8px ;
+   max-width: 230px;
+  }
+  .box__sobre--text p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    margin:20px;
+  line-height: 18px;
+    margin-left:0;
+  }
+
+  .box__sobre--img {
+    width: 400px;
+    height: 300px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px var(--box-shadow);
+  }
+
   @media screen and (max-width: 768px){
     i.menu--icon {
         display: block !important
