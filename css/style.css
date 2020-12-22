@@ -19,14 +19,17 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 200;
    background-color: var(--cinza-claro);
-   background-image: url(../img/back-section-100.png);
-   background-repeat: no-repeat;
-   background-size: cover;
-   background-attachment: fixed;
+   background-image: url(../img/fundo-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+   
 }
+
 .container {
-    padding-right: 6%;
-    padding-left: 6%;
+    padding-right: 4%;
+    padding-left: 4%;
 }
 .cabecalho{
     padding: 2px;
@@ -45,7 +48,7 @@ body{
     justify-content: center;
 }
 .cabecalho__logotipo--logo img {
-    width: 250px;
+    width: 190px;
     
 }
 
@@ -73,7 +76,7 @@ body{
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
-  
+    
 }
 .box__text {
     width: 60%;
@@ -188,6 +191,7 @@ body{
     flex-wrap: wrap;
     border-radius: 10px;
     background-color: var(--preto-transparente);
+
 }
 
 .card__project {
