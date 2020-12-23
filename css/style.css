@@ -39,7 +39,7 @@ body{
     font-weight: 300;
     display:flex;
     justify-content: space-around;
-    z-index: 10;
+    z-index: 30;
     box-shadow: 1px 1px 10px var(--box-shadow);
     animation: swing-in-top-fwd 1s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
 }
@@ -71,12 +71,11 @@ body{
 }
 
 .banner__home {
-    height: 80vh;
+    height: 78vh;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
     justify-content: flex-start;
-    
 }
 .box__text {
     width: 60%;
@@ -166,8 +165,6 @@ body{
     background-color: var(--branco);
     border-radius: 5px;
 }
-
-
 .titulo{
     background-color: var(--azul);
     margin: 0 auto;
@@ -345,7 +342,6 @@ body{
     height: 300px;
     border-radius: 150px;
     background: linear-gradient(#CA1D7E, #E35157,#F2703F);
-    box-shadow: 1px 1px 5px var(--box-shadow);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -354,7 +350,6 @@ body{
     width: 285px;
     height: 285px;
     border-radius: 150px;
-    box-shadow: 1px 1px 5px var(--box-shadow);
   }
 
   .box__skills{
@@ -368,19 +363,29 @@ body{
   }
   .card__skills{
     display: flex;
-    flex-direction: column;
-    align-items: center;
     background-color: var(--cinza-claro);
     border-radius: 15px;
-    justify-content: space-around;
-    width: 100%;
+    flex-direction: column;
     margin-bottom: 20px;
+    width: 380px;
+    height: 200px;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .icons__skills{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
   }
 
   .card__skills--titulo{
     font-size: 1.5rem;
     padding-top: 10px;
     padding-bottom: 20px;
+    text-align: center;
     font-weight: 500;
     font-family: 'Montserrat', sans-serif;
   }
