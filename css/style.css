@@ -354,25 +354,36 @@ body{
 
   .box__skills{
     display: flex;
-    padding:50px;
-    flex-direction: column;
+    width: 100%;
+    padding-top: 50px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
     background-color: var(--preto-transparente);
     border-radius: 15px;
-    justify-content: center;
-    margin: 0 auto;
   }
   .card__skills{
     display: flex;
-    background-color: var(--cinza-claro);
+    border: 3px solid var(--cinza-claro);
+    background-color:var(--cinza-claro);
     border-radius: 15px;
     flex-direction: column;
     margin-bottom: 20px;
-    width: 380px;
+    width: 360px;
+    color: var(--cinza);
     height: 200px;
     justify-content: space-around;
     align-items: center;
     padding: 10px;
+    transition: .5s;
   }
+  .card__skills:hover {
+    background-color:var(--preto-transparente);
+    color: var(--cinza-claro);
+    border: 3px solid var(--azul);
+    box-shadow: 5px 5px 5px dodgerblue;
+  }
+ 
 
   .icons__skills{
     display: flex;
@@ -406,14 +417,24 @@ body{
     font-weight: 500;
   }
   .img__skills{
-    width: 120px;
+    width: 60px;
   }
   .img__skills--adobe{
-    width: 100px;
+    width: 55px;
     padding-top: 5px;
   }
 
-
+  .text__skills--info {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    font-size: 1rem;
+    text-align: left;
+    padding: 20px;
+    color: var(--cinza-claro);
+    width: 100%;
+    
+  }
 
   @media screen and (max-width: 768px){
     i.menu--icon {
