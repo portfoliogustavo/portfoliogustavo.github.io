@@ -381,7 +381,7 @@ body{
     background-color:var(--preto-transparente);
     color: var(--cinza-claro);
     border: 3px solid var(--azul);
-    box-shadow: 5px 5px 5px dodgerblue;
+    box-shadow: 1px 1px 15px dodgerblue;
   }
  
 
@@ -433,16 +433,46 @@ body{
     padding: 20px;
     color: var(--cinza-claro);
     width: 100%;
-    
   }
+
+  .box__contato{
+    background-color: var(--preto-transparente);
+    border-radius: 15px;
+  }
+  .box__form {
+    padding: 50px;
+    color: var(--cinza-claro);
+  }
+  .box__form h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+  .box__text--form{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
+  }
+  .text__contact{
+    background-color: var(--azul);
+    padding: 10px;
+    border-radius: 10px;
+    font-weight: 500;
+  }
+  .subtitle{
+    padding: 5px;
+  }
+ 
 
   @media screen and (max-width: 768px){
     i.menu--icon {
-        display: block !important
-        ;
+        display: block !important;
         
     }
-    span {
+    .menu--item {
         display: none !important;
     }
     .barra__navegacao--list{  
