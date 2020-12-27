@@ -380,8 +380,8 @@ body{
   .card__skills:hover {
     background-color:var(--preto-transparente);
     color: var(--cinza-claro);
-    border: 3px solid var(--azul);
-    box-shadow: 1px 1px 15px dodgerblue;
+    border: 2px solid var(--azul);
+    box-shadow: 1px 1px 5px dodgerblue;
   }
  
 
@@ -436,36 +436,32 @@ body{
   }
 
   .box__contato{
-    background-color: var(--preto-transparente);
-    border-radius: 15px;
-  }
-  .box__form {
-    padding: 50px;
-    color: var(--cinza-claro);
-  }
-  .box__form h3 {
-    font-size: 1.5rem;
-    font-weight: 500;
-    line-height: 30px;
-    text-align: center;
-    padding-bottom: 40px;
-  }
-  .box__text--form{
     display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
-
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
   .text__contact{
-    background-color: var(--azul);
-    padding: 10px;
-    border-radius: 10px;
     font-weight: 500;
   }
-  .subtitle{
-    padding: 5px;
+
+  .redes__sociais{
+    display: flex;
+    justify-content: space-around;
+    width: 280px;
+    padding: 20px;
+  }
+  .icon__redes{
+    display: flex;
+    flex-direction: column;
   }
  
+  .box__rodape{
+    text-align: center;
+    color: var(--cinza-claro);
+    font-weight: 300;
+    padding-bottom: 20px;
+  }
 
   @media screen and (max-width: 768px){
     i.menu--icon {

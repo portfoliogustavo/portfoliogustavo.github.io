@@ -13,3 +13,13 @@ var swiper = new Swiper('.blog-slider', {
     }
   });
 // 
+
+// Get Year 
+var Elem = document.getElementById("Clock");
+function Ano(){ 
+  var Hoje = new Date(); 
+  var pegarAno = Hoje.getFullYear(); 
+  
+  Elem.innerHTML = pegarAno; 
+  } 
+  window.setInterval("Ano()",1000);
