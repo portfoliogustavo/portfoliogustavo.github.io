@@ -1,4 +1,3 @@
-
 :root{
 --branco: #fff;
 --azul-claro: #DFE3E5;
@@ -26,7 +25,6 @@ body{
     background-attachment: fixed; 
    
 }
-
 .container {
     padding-right: 4%;
     padding-left: 4%;
@@ -435,20 +433,27 @@ body{
     width: 100%;
   }
 
+ 
   .box__contato{
+    background-color: var(--preto-transparente);
     display: flex;
+    width:700px;
     flex-direction: column;
-    justify-content: center;
+    
     align-items: center;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    padding: 10px;
   }
   .text__contact{
     font-weight: 500;
+    padding: 10px;
   }
 
   .redes__sociais{
     display: flex;
-    justify-content: space-around;
-    width: 280px;
+    justify-content: space-evenly;
+    width: 100%;
     padding: 20px;
   }
   .icon__redes{
@@ -457,11 +462,46 @@ body{
   }
  
   .box__rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
     color: var(--cinza-claro);
     font-weight: 300;
     padding-bottom: 20px;
   }
+
+/* ===================== DESKTOP MEDIA QUERIE =====================================*/
+ @media screen and (min-width: 769px) and (max-width: 992px){
+   .box__text--titulo{
+     font-size: 2.2rem;
+   }
+   .box__text--descricao{
+     font-size: 1rem;
+   }
+   .box__sobre--text p{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    margin:20px;
+    line-height: 20px;
+    margin-left:0;
+   }
+   .box__sobre--text h2{
+    font-size: 1.5rem;
+    font-weight:500;
+    margin: 0 auto;
+    color: var(--cinza-claro);
+    padding:5px;
+    background-color: var(--azul);
+    border-radius:8px ;
+    max-width: 200px;
+    text-align: center;
+  }
+ }
+
+/* ===================== DESKTOP MEDIA QUERIE =====================================*/
 
   @media screen and (max-width: 768px){
     i.menu--icon {
