@@ -129,7 +129,8 @@
 @media screen and (max-width: 768px) {
   .blog-slider__img {
     transform: translateY(-50%);
-    width: 90%;
+    width: 60%;
+    height: 60%;
  }
  .slide__info{
    padding-top: 20px;
@@ -205,9 +206,7 @@
   .blog-slider__button {
     width: 100%;
  }
- .blog-slider{
-   height: 150px !important;
- }
+ 
 }
 .blog-slider .swiper-container-horizontal > .swiper-pagination-bullets, .blog-slider .swiper-pagination-custom, .blog-slider .swiper-pagination-fraction {
   bottom: 10px;
@@ -229,7 +228,7 @@
   .blog-slider__pagination {
     transform: translateX(-50%);
     left: 50% !important;
-    top: 205px;
+    top: 92%;
     width: 100% !important;
     display: flex;
     justify-content: center;

@@ -26,8 +26,8 @@ body{
    
 }
 .container {
-    padding-right: 4%;
-    padding-left: 4%;
+    padding-right: 1.5%;
+    padding-left: 1.5%;
 }
 .cabecalho{
     padding: 2px;
@@ -502,18 +502,66 @@ body{
  }
 
 /* ===================== DESKTOP MEDIA QUERIE =====================================*/
-
-  @media screen and (max-width: 768px){
-    i.menu--icon {
-        display: block !important;
-        
-    }
-    .menu--item {
-        display: none !important;
-    }
-    .barra__navegacao--list{  
-        display: flex;
-       justify-content: space-between;
-        align-items: center;
-    }
+/* ===================== TABLET MEDIA QUERIE =====================================*/
+@media screen and (min-width: 481px) and (max-width: 768px){
+  .cabecalho{
+    flex-direction: column;
+    align-items: center;
   }
+  .cabecalho__logotipo--logo img{
+    margin-left: 20px;
+    width: 160px;
+  }
+  .banner__home{
+    justify-content: center !important;
+  }
+  .box__text{
+    width: 100%;
+  }
+  i.menu--icon {
+    display: block !important;
+    
+}
+.menu--item {
+    display: none !important;
+}
+.barra__navegacao--list__item
+.barra__navegacao--list{  
+    display: flex;
+   justify-content: space-between;
+    align-items: center;
+}
+  .barra__navegacao--list__item{
+    font-size: 1.2rem !important;
+    width: 280px;
+  }
+  .box__text--titulo{
+    font-size: 2.2rem;
+  }
+  .box__text--descricao{
+    font-size: 1rem;
+  }
+  .box__sobre--text p{
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
+   text-align: center;
+   margin:20px;
+   line-height: 20px;
+   margin-left:0;
+  }
+  .box__sobre--text h2{
+   font-size: 1.5rem;
+   font-weight:500;
+   margin: 0 auto;
+   color: var(--cinza-claro);
+   padding:5px;
+   background-color: var(--azul);
+   border-radius:8px ;
+   max-width: 200px;
+   text-align: center;
+ }
+}
+
+/* ===================== DESKTOP MEDIA QUERIE =====================================*/
+  @media screen and (max-width: 768px){
+   
