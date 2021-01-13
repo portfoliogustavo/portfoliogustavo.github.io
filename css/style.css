@@ -47,7 +47,6 @@ body{
 }
 .cabecalho__logotipo--logo img {
     width: 190px;
-    
 }
 
 .barra__navegacao {
@@ -330,9 +329,9 @@ body{
   .box__sobre--text p{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
-    margin:20px;
     line-height: 20px;
-    margin-left:0;
+    margin-top: 15px;
+    margin-bottom: 15px;
   }
 
   .box__sobre--img {
@@ -437,9 +436,8 @@ body{
   .box__contato{
     background-color: var(--preto-transparente);
     display: flex;
-    width:700px;
+    width:100%;
     flex-direction: column;
-    
     align-items: center;
     margin-bottom: 15px;
     border-radius: 15px;
@@ -484,9 +482,7 @@ body{
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
     text-align: center;
-    margin:20px;
     line-height: 20px;
-    margin-left:0;
    }
    .box__sobre--text h2{
     font-size: 1.5rem;
@@ -499,7 +495,18 @@ body{
     max-width: 200px;
     text-align: center;
   }
+  .box__skills{
+    flex-direction: column;
+  }
  }
+ .linha__divider{
+  margin-top:80px;
+  margin-bottom:80px;
+    width: 200px;
+    height: 3px;
+    background-color: var(--branco);
+    border-radius: 5px;
+}
 
 /* ===================== DESKTOP MEDIA QUERIE =====================================*/
 /* ===================== TABLET MEDIA QUERIE =====================================*/
@@ -509,7 +516,6 @@ body{
     align-items: center;
   }
   .cabecalho__logotipo--logo img{
-    margin-left: 20px;
     width: 160px;
   }
   .banner__home{
@@ -519,8 +525,7 @@ body{
     width: 100%;
   }
   i.menu--icon {
-    display: block !important;
-    
+    display: block !important; 
 }
 .menu--item {
     display: none !important;
@@ -545,9 +550,7 @@ body{
    font-family: 'Montserrat', sans-serif;
    font-weight: 400;
    text-align: center;
-   margin:20px;
    line-height: 20px;
-   margin-left:0;
   }
   .box__sobre--text h2{
    font-size: 1.5rem;
@@ -561,7 +564,86 @@ body{
    text-align: center;
  }
 }
+.text__skills--info{
+  text-align: center;
+}
+.box__contato{
+  width: 100%;
+}
 
 /* ===================== DESKTOP MEDIA QUERIE =====================================*/
-  @media screen and (max-width: 768px){
-   
+  @media screen and (max-width: 480px){
+    .cabecalho{
+      flex-direction: column;
+      align-items: center;
+    }
+    .cabecalho__logotipo--logo img{
+      width: 160px;
+    }
+    .banner__home{
+      justify-content: center !important;
+    }
+    .box__text{
+      width: 100%;
+    }
+    i.menu--icon {
+      display: block !important; 
+  }
+  .menu--item {
+      display: none !important;
+  }
+  .barra__navegacao--list__item
+  .barra__navegacao--list{  
+      display: flex;
+     justify-content: space-between;
+      align-items: center;
+  }
+    .barra__navegacao--list__item{
+      font-size: 1.2rem !important;
+      width: 280px;
+    }
+    .box__text--titulo{
+      font-size: 2.2rem;
+    }
+    .box__text--descricao{
+      font-size: 1rem;
+    }
+    .box__sobre--text p{
+     font-family: 'Montserrat', sans-serif;
+     font-weight: 400;
+     text-align: center;
+     line-height: 20px;
+
+    }
+    .box__sobre--text h2{
+     font-size: 1.5rem;
+     font-weight:500;
+     margin: 0 auto;
+     color: var(--cinza-claro);
+     padding:5px;
+     background-color: var(--azul);
+     border-radius:8px ;
+     max-width: 200px;
+     text-align: center;
+   }
+  
+  .text__skills--info{
+    text-align: center;
+  }
+  .box__contato{
+    width: 100%;
+  }
+  .box__sobre--img img{
+    width: 285px;
+    height: 285 px;
+    border-radius: 150px;
+  }
+  .linha__divider{
+    margin-top:80px;
+    margin-bottom:80px;
+      width: 200px;
+      height: 3px;
+      background-color: var(--branco);
+      border-radius: 5px;
+  }
+  }
