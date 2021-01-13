@@ -324,7 +324,7 @@ body{
     padding:5px;
     background-color: var(--azul);
     border-radius:8px ;
-   max-width: 200px;
+   max-width: 300px;
   }
   .box__sobre--text p{
     font-family: 'Montserrat', sans-serif;
@@ -374,12 +374,7 @@ body{
     padding: 10px;
     transition: .5s;
   }
-  .card__skills:hover {
-    background-color:var(--preto-transparente);
-    color: var(--cinza-claro);
-    border: 2px solid var(--azul);
-    box-shadow: 1px 1px 5px dodgerblue;
-  }
+  
  
 
   .icons__skills{
@@ -412,6 +407,7 @@ body{
   .text__skills {
     font-size: 1.2rem;
     font-weight: 500;
+    padding-bottom: 10px;
   }
   .img__skills{
     width: 60px;
@@ -457,6 +453,9 @@ body{
   .icon__redes{
     display: flex;
     flex-direction: column;
+  }
+  .icon__redes p{
+   padding-bottom:10px ;
   }
  
   .box__rodape{
@@ -570,9 +569,11 @@ body{
 .box__contato{
   width: 100%;
 }
+/* ===================== TABLET MEDIA QUERIE =====================================*/
 
-/* ===================== DESKTOP MEDIA QUERIE =====================================*/
-  @media screen and (max-width: 480px){
+
+/* ===================== MOBILE MEDIA QUERIE =====================================*/
+  @media screen and (min-width: 300px) and (max-width: 480px){
     .cabecalho{
       flex-direction: column;
       align-items: center;
@@ -646,4 +647,8 @@ body{
       background-color: var(--branco);
       border-radius: 5px;
   }
+  .card__skills{
+    height: 250px;
   }
+  }
+  /* ===================== MOBILE MEDIA QUERIE =====================================*/
