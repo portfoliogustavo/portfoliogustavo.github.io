@@ -1,0 +1,384 @@
+/* CSS - DEV GUSTAVO VENCESLAU  */
+
+/* ############################ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+:root {
+  --corprincipal: #3e6ee9;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.navbar-nav li:hover .dropdown-menu {
+  display: block;
+}
+
+/* rotate caret on hover */
+
+.dropdown-menu>li>a:hover:after {
+  text-decoration: underline;
+  transform: rotate(-90deg);
+}
+
+.btn-mobile {
+  animation: bounce-in-top 1.1s both;
+  animation-delay: .6s;
+}
+
+span.title {
+  color: var(--corprincipal);
+  font-weight: 600;
+}
+
+@keyframes bounce-in-top {
+  0% {
+    transform: translateY(-500px);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: translateY(-65px);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: translateY(-28px);
+    animation-timing-function: ease-in;
+  }
+  90% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: translateY(-8px);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: translateY(0);
+    animation-timing-function: ease-out;
+  }
+}
+
+.section-template {
+  width: 100%;
+  height: 100%;
+}
+
+
+
+img.logo {
+  margin-top: -20px;
+  margin-left: 30px;
+  width: 350px;
+}
+
+.titulo {
+  font-size: 3.5rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--corprincipal);
+  animation: slide-in-elliptic-left-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: .3s;
+}
+
+.titulo2 {
+  font-size: 2.9rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--corprincipal);
+}
+.titulo3 {
+  font-size: 2rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--corprincipal);
+}
+
+.slogan {
+  font-size: 2.3rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--corprincipal);
+  animation: slide-in-elliptic-left-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation-delay: .3s;
+}
+
+.banner-inicio {
+  animation: slide-in-elliptic-left-fwd 0.6s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  z-index: 5;
+}
+
+.icons-img {
+  width: 150px;
+  animation: floating 1.5s infinite;
+
+}
+.text-icons p {
+  font-size: 1.5rem !important;
+  font-weight: 300;
+}
+
+@keyframes slide-in-elliptic-left-fwd {
+  0% {
+    transform: translateX(-800px) rotateY(30deg) scale(0);
+    transform-origin: -100% 50%;
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0) rotateY(0) scale(1);
+    transform-origin: 1800px 50%;
+    opacity: 1;
+  }
+}
+
+@keyframes bounce-in-fwd {
+  0% {
+    transform: scale(0);
+    animation-timing-function: ease-in;
+    opacity: 0;
+  }
+  38% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+    opacity: 1;
+  }
+  55% {
+    transform: scale(0.7);
+    animation-timing-function: ease-in;
+  }
+  72% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+  81% {
+    transform: scale(0.84);
+    animation-timing-function: ease-in;
+  }
+  89% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+  95% {
+    transform: scale(0.95);
+    animation-timing-function: ease-in;
+  }
+  100% {
+    transform: scale(1);
+    animation-timing-function: ease-out;
+  }
+}
+
+hr.divider {
+  width: 20%;
+  border-top: 1px solid #3e6ee970;
+  margin-top: 30px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+p {
+  font-size: 30px;
+}
+
+.logo-footer img {
+  width: 200px;
+}
+
+.logo-footer p {
+  font-size: 15px;
+  color: #fff;
+}
+
+.logo-footer a img {
+  width: 30px;
+}
+
+/* ################################ */
+
+/* #### MOBILE - RESPONSIVE  ##### */
+
+/* ############################### */
+
+@media (min-width:1440px) and (max-width: 3500px) {
+  .titulo {
+    font-size: 5.5rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--corprincipal);
+    animation: slide-in-elliptic-left-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: .3s;
+  }
+  .titulo2 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--corprincipal);
+  }
+  .titulo3{
+    font-size: 3rem;
+    font-weight: 600;
+    text-align: center;
+    color: var(--corprincipal);
+  }
+  .text-icons p {
+    font-size: 2.3rem !important;
+    font-weight: 300;
+  }
+  .slogan {
+    font-size: 3.3rem;
+    font-weight: 400;
+    text-align: center;
+    color: var(--corprincipal);
+    animation: slide-in-elliptic-left-fwd 0.7s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+    animation-delay: .3s;
+  }
+  .icons-img {
+    width: 300px;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 1023px) {
+  hr.divider {
+    width: 20%;
+    border-top: 1px solid #3e6ee970;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  
+  .titulo {
+    font-size: 2.8rem;
+    text-align: center;
+    animation: fade-in-fwd 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  .titulo2 {
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--corprincipal);
+  }
+  .titulo23 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-align: center;
+    color: var(--corprincipal);
+  }
+  
+  .slogan {
+    font-size: 2rem;
+    text-align: center;
+    animation: fade-in-fwd 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  @keyframes fade-in-fwd {
+    0% {
+      transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  img.logo {
+    width: 250px;
+  }
+  p {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .titulo {
+    font-size: 2rem;
+    text-align: center;
+    animation: fade-in-fwd 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  .aprendendo-em-casa {
+    background-image: none;
+  }
+ .section-template img {
+   width: 280px;
+ }
+  @keyframes fade-in-fwd {
+    0% {
+      transform: translateZ(-80px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateZ(0);
+      opacity: 1;
+    }
+  }
+  p {
+    font-size: 18px;
+  }
+  hr.divider {
+    width: 20%;
+    border-top: 1px solid #3e6ee970;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .titulo2 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--corprincipal);
+  }
+  .titulo3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    text-align: center;
+    color: var(--corprincipal);
+  }
+  .slogan {
+    font-size: 1.5rem;
+    text-align: center;
+    animation: fade-in-fwd 0.9s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  }
+  img.logo {
+    width: 180px;
+  }
+  .icons-img {
+    width: 100px !important
+    ;
+  }
+}
+
+/* ################################ */
+
+/* #### MOBILE - RESPONSIVE  ##### */
+
+/* ############################### */
+
+@keyframes floating {
+  0% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-10px);
+  }
+  
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+

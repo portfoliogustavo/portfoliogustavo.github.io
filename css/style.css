@@ -20,7 +20,7 @@ body{
     font-family: "Poppins", sans-serif;
     font-weight: 200;
    background-color: var(--cinza-claro);
-   background-image: url(../img/fundo-2.jpg);
+    background-image: url(../img/fundo-2.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
