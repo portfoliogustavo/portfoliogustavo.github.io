@@ -1,8 +1,6 @@
 /* CSS - DEV GUSTAVO VENCESLAU  */
 
 /* ############################ */
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
 :root {
   --corprincipal: #3e6ee9;
 }
@@ -381,4 +379,34 @@ p {
     transform: translateY(0px);
   }
 }
-
+.portfolio__link a{
+  position:fixed;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 500;
+  bottom:20px;
+  left:30px;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 10px;
+  background-color: #fd2f2f;
+  color: #fff;
+}
+.portfolio__link a:hover{
+  text-decoration: none;
+  color: #fff;
+}
+@media screen and (max-width: 767px){
+  .portfolio__link a{
+      width: 100%;
+      display: block;
+      top: px;
+      bottom:0px;
+      left: 0;
+      text-align: center;
+      border-radius: 0px;
+      margin: 0 auto !important;
+      background-color: #fd2f2f;
+      color: #fff;
+    }
+}
