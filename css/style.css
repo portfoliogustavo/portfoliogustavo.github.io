@@ -472,6 +472,16 @@ body{
     padding-bottom: 20px;
   }
 
+  .typeform{
+    display: flex;
+    justify-content: center;
+  }
+  .typeform-widget{
+    border-radius:15px !important; 
+    width: 90%; 
+    height: 500px;
+  }
+  
 /* ===================== DESKTOP MEDIA QUERIE =====================================*/
  @media screen and (min-width: 769px) and (max-width: 992px){
    .box__text--titulo{
