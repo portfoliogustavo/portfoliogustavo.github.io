@@ -469,7 +469,7 @@ body{
     display: flex;
     justify-content: center;
     width: 100%;
-    padding: 20px;
+    padding: 30px;
   }
   .icon__redes{
     display: flex;
@@ -506,7 +506,7 @@ body{
     display: flex;
     width: 100%;
     padding-top: 50px;
-    padding-bottom: 50px;
+    padding-bottom: 20px;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
@@ -532,7 +532,6 @@ body{
     outline: none;
     cursor: pointer;
     padding: 10px;
-    top: 35px;
     font-weight: 200;
     border-radius: 10px;
     max-width: 300px;
