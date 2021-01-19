@@ -488,6 +488,7 @@ body{
     text-align: center;
     color: var(--cinza-claro);
     font-weight: 300;
+    padding-top: 20px;
     padding-bottom: 20px;
   }
 
@@ -532,9 +533,9 @@ body{
     outline: none;
     cursor: pointer;
     padding: 10px;
-    font-weight: 200;
+    font-weight: 300;
     border-radius: 10px;
-    max-width: 300px;
+    width: 250px;
     font-size: 1.2rem;
     text-align: center;
     color: var(--cinza-claro);
