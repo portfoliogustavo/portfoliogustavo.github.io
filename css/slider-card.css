@@ -191,6 +191,7 @@
 .blog-slider__button {
   display: inline-flex;
   margin-top: 10px;
+  width: 200px;
   background-image: linear-gradient(180deg,  #005d9b 0%, #216ee2 74%);
   padding: 10px 20px;
   border-radius: 10px;
