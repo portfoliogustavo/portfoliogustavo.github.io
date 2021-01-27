@@ -5,17 +5,17 @@
 	http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 
 	<url>
-		<loc>https://portfoliogustavo.github.io</loc>
+		<loc>https://portfoliogustavo.netlify.app</loc>
 		<changefreq>weekly</changefreq>
 		<priority>1.0</priority>
 	</url>
 	<url>
-		<loc>https://portfoliogustavo.github.io/goodconnection.html</loc>
+		<loc>https://portfoliogustavo.netlify.app/goodconnection.html</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
 	<url>
-		<loc>https://portfoliogustavo.github.io/netodealuguel.html</loc>
+		<loc>https://portfoliogustavo.netlify.app/netodealuguel.html</loc>
 		<changefreq>weekly</changefreq>
 		<priority>0.8</priority>
 	</url>
