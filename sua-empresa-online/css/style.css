@@ -1,0 +1,851 @@
+:root {
+    /* Cores */
+    --branco: #fff;
+    --verde: #358d41;
+    --azul: #0071bc;
+    /* Fonts */
+    --Montserrat: 'Montserrat', 'sans-serif'
+}
+
+body {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: var(--Montserrat);
+    background-image: url(../img/testee.png);
+    background-attachment: fixed;
+}
+hr{
+    width: 320px;   
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+hr.divider{
+    width: 0;
+    border-left: 1px solid rgba(51, 51, 51, 0.514) !important;
+    height: 200px;
+    border: none;
+    margin: 0px 100px;
+}
+
+.cabecalho {
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: transparent;
+}
+
+.logotipo__header {
+    font-weight: 900;
+    color: var(--branco);
+    font-size: 1.5rem;
+}
+
+.menu__nav ul {
+    display: flex;
+}
+
+.menu__nav ul li {
+    font-weight: 400;
+    padding: 0px 10px;
+    list-style: none;
+    color: var(--branco);
+    text-transform: uppercase;
+}
+.nav__item a{
+    color: #fff !important;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+.toggle__mobile{
+    display: none;
+}
+
+.banner__inicio {
+    height: 100vh;
+    background-image: url(../img/banner.jpg);
+}
+
+.text__banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: 25%;
+    text-align: center;
+    margin: 0 auto;
+    padding: 0 !important;
+    color: var(--branco);
+}
+
+.text__banner p {
+    font-size: 1.5rem;
+    font-family: var(--Montserrat);
+    font-weight: 200;
+    padding-top: 0;
+    padding-bottom: 30px;
+    margin: 0;
+}
+
+.text__banner h1 {
+    font-size: 2.5rem;
+    font-family: var(--Montserrat);
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 30px;
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .10em solid #ffffff; /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: typing 3.1s steps(27, end), blink-caret .80s step-end infinite;
+}
+
+
+/* The typing effect */
+@keyframes typing {
+from { width: 0 }
+to { width: 60% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+from, to { border-color: transparent }
+50% { border-color: #e2e2e2; }
+}
+.btn__action {
+    text-decoration: none;
+    width: 200px;
+    background: var(--verde);
+    border-radius: 15px;
+    box-shadow: 1px 1px #444444;
+    margin-top: 30px;
+    padding: 20px 45px;
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 1.5rem;
+    text-align: center;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease 0s;
+    animation: btnAnimation .8s;
+}
+
+@keyframes btnAnimation {
+    0%{
+        opacity: 0;
+    }
+   
+    100%{
+        opacity: 1;
+}
+}
+
+.btn__action:hover {
+    background-color: #1d9431de;
+    color: #fff;
+    transform: translateY(-7px);
+    transition: .4s;
+}
+
+.default__section{
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    padding-bottom: 30px;
+}
+.title{
+    padding-top: 30px;
+    letter-spacing: 2px;
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.box__services--cards{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+.services__cards{
+    padding: 50px;
+    border-radius: 10px;
+    text-align: center;
+}
+.services__cards img {
+    width: 50px;
+}
+
+.box__about{
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.box__about img{
+    border-radius: 15px;
+    width: 600px;
+    height: 430px;
+    max-width: 1200px;
+}
+.box__about--text {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    width: 40%;
+    max-width: 100%;
+    font-size: 1.3rem;
+}
+.box__about--text p {
+   padding-bottom: 10px; 
+}
+
+
+.gallery{
+    width: 100%;
+    background-color: #10101023;
+    padding-bottom: 50px;
+}
+.swiper-container {
+    width: 700px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 15px;
+}
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #ffffff;
+    
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  .swiper-slide img{
+      width: 100%;
+  }
+
+.missao{
+    font-size: 1rem;
+}
+.visao{
+    display: none;
+    font-size: 1rem;
+}
+.valores{
+    display: none;
+    font-size: 1rem;
+}
+
+.btn__about{
+    background-color: #333;
+    color: var(--branco);
+    padding: 8px;
+    font-size: 1rem;
+    margin-right:5px;
+    text-decoration: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.active, .btn:hover {
+    background-color: var(--verde);
+    color: white;
+}
+.contact{
+    width: 100%;
+}
+.container__contact{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    
+}
+.items__contato--mobile{
+    display: none;
+}
+
+.box__contact, .box__contact ul{
+   width: 250px;
+   list-style: none;
+   padding: 0;
+}
+
+.itens--contato, .itens--contato h3{
+    text-align: right;
+}
+ul.items__contato li{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+     padding-bottom:10px;
+    font-size: 1.2rem;
+    
+}
+.itens--atendimento, .itens--atendimento h3{
+    text-align: left;
+}
+ul.items__atendimento li{
+    display: flex;
+    flex-direction: column;
+    padding-bottom:10px;
+    font-size: 1.2rem;
+}
+
+
+.icones__contact{
+    width: 44px;
+    padding-left: 20px;
+}
+
+
+.btnWhatsapp{
+    background-color: #358d41;
+    padding: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--branco);
+    text-align: center;
+}
+.rodape{
+    background-color: #444444;
+    color: var(--branco);
+    width: 100%; 
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.container__rodape{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+.box__rodape{
+    width: 250px;
+    padding: 0; 
+    text-align: center;
+    font-size: 1.2rem;
+   
+}
+.box__rodape ul{
+    list-style: none;
+    text-align: center;
+    padding: 0 !important;
+    
+}
+.box__rodape li{
+    padding-top: 5px;
+}
+.rodape__logo{
+    padding-top: 20px !important;
+}
+.logotipo__rodape {
+    font-weight: 900;
+    color: var(--branco);
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+.rodape__contato, .rodape__contato li{
+    text-align: left;
+}
+.rodape__mapasite, .rodape__mapasite li{
+    text-align: right;
+}
+
+
+input {
+    padding: 10px;
+    margin: 15px 0px;
+    font-size: 1rem;
+    text-align: left;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    box-shadow: 0px 0px 4px #333;
+}
+
+
+/* ############################################################# */
+/* MEDIA QUERIE MIN 992PX */
+@media screen and (min-width:993px){
+    .box__about img{
+        border-radius: 15px;
+        width: 500px;
+        height: 330px;
+        max-width: 1200px;
+    }
+    .menu__nav--mobile{
+        display: none;
+    }
+    .contact__mobile{
+        display: none;
+    }
+}
+/* MEDIA QUERIE MIN 769px e max 992px*/
+@media screen and (min-width: 769px) and (max-width:992px){
+
+    .text__banner h1 {
+        font-size: 2rem;
+        font-family: var(--Montserrat);
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 30px;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: none;
+        white-space: nowrap; /* Keeps the content on a single line */
+        margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: none;
+    }
+    .btn__action {
+        text-decoration: none;
+        width: 200px;
+        background: var(--verde);
+        border-radius: 15px;
+        box-shadow: 1px 1px #444444;
+        margin-top: 30px;
+        padding: 15px 15px;
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 1.5rem;
+        text-align: center;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s ease 0s;
+        animation: btnAnimation .8s;
+    }
+    
+    @keyframes btnAnimation {
+        0%{
+            opacity: 0;
+        }
+       
+        100%{
+            opacity: 1;
+    }
+    }
+    
+    .btn__action:hover {
+        background-color: #1d9431de;
+        color: #fff;
+        transform: translateY(-7px);
+        transition: .4s;
+    }
+    .box__about img{
+        border-radius: 15px;
+        width: 350px;
+        height: 230px;
+        max-width: 1200px;
+    }
+    .menu__nav--mobile{
+        display: none;
+    }
+    .contact__mobile{
+        display: none;
+    }
+}
+/* MEDIA QUERIE MIN 481px e max 768px*/
+@media screen and (min-width:481px) and (max-width:768px){
+    .text__banner h1 {
+        font-size: 1.4rem;
+        font-family: var(--Montserrat);
+        font-weight: 700;
+        text-transform: uppercase;
+        padding: 30px;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: none;
+        white-space: nowrap; /* Keeps the content on a single line */
+        text-align: center;
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: none;
+    }
+    .text__banner p {
+        font-size: 1.2rem;
+        font-family: var(--Montserrat);
+        font-weight: 200;
+        padding-top: 0;
+        padding-bottom: 30px;
+        margin: 0;
+    }
+    .btn__action {
+        text-decoration: none;
+        width: 200px;
+        background: var(--verde);
+        border-radius: 15px;
+        box-shadow: 1px 1px #444444;
+        margin-top: 30px;
+        padding: 10px 10px;
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 1.2rem;
+        text-align: center;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s ease 0s;
+        animation: btnAnimation .8s;
+    }
+    .cabecalho {
+        background-color: #00000080;
+        justify-content: space-evenly;
+    }
+    .cabecalho .menu__nav{
+        display: none;
+    }
+    .toggle__mobile{
+        display: block;
+        position: relative;
+        left: 10%;
+        padding: 10px;
+    }
+    .toggle__mobile img{
+        color: #fff;
+        width: 40px;
+        cursor: pointer;
+    }
+    .menu__nav--mobile{
+        background-color: #00000080;
+        margin: 0 auto;
+        animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+        transition: .5s;
+        display: none;
+    }
+    .menu__nav--mobile ul{
+        margin: 0 auto;
+    }
+    .menu__nav--mobile li{
+        display: flex !important;
+        justify-content:center;
+        text-align: center;
+        list-style: none;
+        position: relative;
+        
+
+     }
+     @keyframes swing-in-top-fwd {
+        0% {
+          transform: rotateX(-100deg);
+          transform-origin: top;
+          opacity: 0;
+        }
+        100% {
+          transform: rotateX(0deg);
+          transform-origin: top;
+          opacity: 1;
+        }
+      }
+      .box__about{
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box__about img{
+        border-radius: 15px;
+        width: 70%;
+        height: 70%;
+        max-width: 1200px;
+        max-height: 1030px;
+    }
+    .box__about--text {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        font-size: 1.3rem;
+    }
+    .swiper-container {
+        width: 300px;
+        max-width: 450px;
+        height: 300px;
+        
+        border-radius: 15px;
+    }
+
+    .container__contact{
+        display: none;
+    }
+    .items__contato--mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .items__contato--mobile li{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .icones__contact{
+        padding: 10px 0px;
+    }
+    .itens--atendimento{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+
+    }
+    .itens--atendimento ul{
+        margin: 0;
+        padding: 0;
+    }
+    .itens--atendimento li{
+        list-style: none;
+        text-align: left;
+    }
+    .items__atendimento--mobile{
+        text-align: center;
+    }
+    .container__rodape{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .rodape__contato{
+        text-align: center;
+    }
+    .rodape__contato li{
+        text-align: center;
+    }
+    .rodape__mapasite{
+        text-align: center;
+    }
+    .rodape__mapasite li{
+        text-align: center;
+    }
+    
+}
+
+/* MEDIA QUERIE MAX 480 Mobile */
+@media screen and (max-width:480px){
+    .text__banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        top: 25%;
+        text-align: center;
+        margin: 0 auto;
+        padding: 0 !important;
+        color: var(--branco);
+    }
+    .text__banner h1 {
+        font-size: .9rem;
+        font-family: var(--Montserrat);
+        font-weight: 700;
+        padding: 0 !important;
+        text-transform: uppercase;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        border-right: none;
+        white-space: nowrap; /* Keeps the content on a single line */
+        text-align: center;
+        letter-spacing: .15em; /* Adjust as needed */
+        animation: none;
+    }
+    h2.title{
+        font-size: 1.2rem;
+    }
+    
+    .text__banner p {
+        font-size: 1rem;
+        font-family: var(--Montserrat);
+        font-weight: 200;
+        padding-top: 0;
+        padding-bottom: 30px;
+        margin: 0;
+    }
+    .btn__action {
+        text-decoration: none;
+        width: 200px;
+        background: var(--verde);
+        border-radius: 15px;
+        box-shadow: 1px 1px #444444;
+        margin-top: 30px;
+        padding: 10px 10px;
+        color: #ffffff;
+        font-weight: 300;
+        font-size: 1.2rem;
+        text-align: center;
+        box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+        outline: none;
+        cursor: pointer;
+        transition: 0.3s ease 0s;
+        animation: btnAnimation .8s;
+    }
+    .cabecalho {
+        background-color: #00000080;
+        justify-content: space-evenly;
+    }
+    .cabecalho .menu__nav{
+        display: none;
+    }
+    
+    .toggle__mobile{
+        display: block;
+        position: relative;
+        left: 10%;
+        padding: 10px;
+    }
+    .toggle__mobile img{
+        color: #fff;
+        width: 40px;
+        cursor: pointer;
+    }
+    .menu__nav--mobile{
+        background-color: #00000080;
+        margin: 0 auto;
+        animation: swing-in-top-fwd 0.8s cubic-bezier(0.175, 0.885, 0.320, 1.275) both;
+        transition: .5s;
+        display: none;
+    }
+    .menu__nav--mobile ul{
+        margin: 0 auto;
+    }
+    .menu__nav--mobile li{
+        display: flex !important;
+        justify-content:center;
+        text-align: center;
+        list-style: none;
+        position: relative;
+        
+
+     }
+     @keyframes swing-in-top-fwd {
+        0% {
+          transform: rotateX(-100deg);
+          transform-origin: top;
+          opacity: 0;
+        }
+        100% {
+          transform: rotateX(0deg);
+          transform-origin: top;
+          opacity: 1;
+        }
+      }
+      .box__services--cards{
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        flex-direction: column;
+        padding: 30px;
+    }
+      .box__about{
+        padding: 30px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        align-items: center;
+    }
+    .box__about img{
+        border-radius: 15px;
+        width: 70%;
+        height: 70%;
+        max-width: 1200px;
+        max-height: 1030px;
+    }
+    .box__about--text {
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        width: 100%;
+        max-width: 100%;
+        font-size: 1.3rem;
+    }
+    .swiper-container {
+        width: 300px;
+        max-width: 450px;
+        height: 300px;
+        
+        border-radius: 15px;
+    }
+
+    .container__contact{
+        display: none;
+    }
+    .items__contato--mobile{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .items__contato--mobile li{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .icones__contact{
+        padding: 10px 0px;
+    }
+    .itens--atendimento{
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+
+    }
+    .itens--atendimento ul{
+        margin: 0;
+        padding: 0;
+    }
+    .itens--atendimento li{
+        list-style: none;
+        text-align: left;
+    }
+    .items__atendimento--mobile{
+        text-align: center;
+    }
+    .container__rodape{
+        width: 100%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: column;
+        padding-top: 50px;
+    }
+    .rodape__contato{
+        text-align: center;
+    }
+    .rodape__contato li{
+        text-align: center;
+    }
+    .rodape__mapasite{
+        text-align: center;
+    }
+    .rodape__mapasite li{
+        text-align: center;
+    }
+}
+
+
