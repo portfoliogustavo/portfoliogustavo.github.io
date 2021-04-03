@@ -94,7 +94,7 @@
   transition-delay: 1.7s;
 }
 .blog-slider__img {
-  width: 300px;
+  width: 400px;
   flex-shrink: 0;
   height: 300px;
   background-image: linear-gradient(147deg, #2e6ee6 0%, #5eaefa   74%);
