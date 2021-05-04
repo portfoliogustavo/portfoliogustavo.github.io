@@ -12,9 +12,15 @@ Link do site: [Good Connection](https://portfoliogustavo.github.io/goodconnectio
 
 ---
 #### Neto de Aluguel - Ensinando Tecnologia
-O **Neto de Aluguel**, é um site desenvolvido com para um projeto de ensino de tecnologia, para jovens/adultos/idosos, de forma online e didática.
+O **Neto de Aluguel**, é um site desenvolvido para um projeto de ensino de tecnologia, para jovens/adultos/idosos, de forma online e didática.
 
 Link do site: [Neto de Aluguel](https://portfoliogustavo.github.io/netodealuguel.html).
+
+---
+#### SEAP Esportes
+O **SEAP ESPORTES**, é um site desenvolvido para uma escola de futebol e um ambiente de locação para diversas atividades.
+
+Link do site: [SEAP ESPORTES](https://seapesportes.com.br).
 
 ---
  
